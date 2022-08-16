@@ -1,0 +1,68 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.conteiner {
+	width: 1000px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.conteiner div {
+	margin: 15px;
+	padding: 15px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 10px;
+	color: gray;
+}
+
+ul {
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px 10px;
+	margin-bottom: 15px;
+}
+
+li {
+	position: relative;
+}
+
+li:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	z-index: 1;
+}
+
+li>img {
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border: 1px solid rgb(196, 193, 193);
+}
+
+#listBas>li{
+	width: 100px;
+	height: 100px;
+}
+
+@media (max-width: 700px) {
+	.conteiner {
+		grid-template-columns: 1fr;
+		margin: 0;
+	}
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="conteiner">
+	<div id="pics">
+		<h1>Поличка</h1>
+		<ul id="listMag">
+			<li>
+				<img src="image/pic01.png" >
+			</li>
+			<li>
+				<img src="image/pic02.png" >
+			</li>
+			<li>
+				<img src="image/pic03.png" >
+			</li>
+			<li>
+				<img src="image/pic04.png" >
+			</li>
+			<li>
+				<img src="image/pic05.png" >
+			</li>
+			<li>
+				<img src="image/pic06.png" >
+			</li>
+			<li>
+				<img src="image/pic07.png" >
+			</li>
+			<li>
+				<img src="image/pic08.png" >
+			</li>
+		</ul>
+	</div>
+	<div class="pic">
+		<h1>Кошик: <span>0</span></h1>
+		<ul id="listBas"></ul>
+	</div>
+</div>
+
+<script src="main.js"></script>
+<script>
+	let obj = {
+		listMag: '#listMag',
+		listBas: '#listBas',
+		span: 'span'
+	}
+	let basket = new Basket(obj);
+	basket.init();
+</script>
+</body>
+</html>
